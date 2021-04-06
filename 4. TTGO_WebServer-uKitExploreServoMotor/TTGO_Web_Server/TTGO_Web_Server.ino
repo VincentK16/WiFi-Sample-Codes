@@ -113,7 +113,7 @@ String SendHTML(uint8_t led1stat,uint8_t led2stat){
     ptr +="<h3>Using Station(STA) Mode</h3>\n";
   
    if(led1stat)
-  {ptr +="<p>LED1 Status: ON</p><a class=\"button button-off\" href=\"/led1off\">OFF</a>\n";}
+  {ptr +="<p>LED1 Status: ON</p><a href=\"/led1off\">OFF</a>\n";}
   else
   {ptr +="<p>LED1 Status: OFF</p><a class=\"button button-on\" href=\"/led1on\">ON</a>\n";}
 
