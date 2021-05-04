@@ -2,7 +2,7 @@
 
 This repo consists of the sample codes to be used during class.
 
-> 1. TTGO-uKitExplore_Basic Serial Communication: Basic serial communication (UART) between TTGO to uKit Explore. [NO EXTERNAL HARDWARE] TTGO --> uKit Explore
+> 1. **TTGO-uKitExplore_Basic Serial Communication**: Basic serial communication (UART) between TTGO to uKit Explore. [NO EXTERNAL HARDWARE] TTGO --> uKit Explore
 > 2. TTGO-uKitExploreServoMotor: Basic serial communication (UART) between TTGO to uKit Explore. [WITH ATTACHED UBTECH Servo] TTGO --> uKit Explore
 > 3. ESP32_APMode: Made the TTGO in AP mode (broadcast its own WiFi) TTGO
 > 4. TTGO_WebServer-uKitExploreServoMotor: Basic Web Server in TTGO to control hardware attached on uKit Explore TTGO --> uKit Explore
