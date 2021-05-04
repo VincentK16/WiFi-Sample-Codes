@@ -12,11 +12,12 @@
 #include <WiFi.h>
 #include "time.h"
 
-const char* ssid     = "VincentKok";
+/*Remeber to change the network credentials. */
+const char* ssid     = "VincentKok"; 
 const char* password = "vickhuawei";
 
 const char* ntpServer = "pool.ntp.org";
-const long  gmtOffset_sec = 28800;
+const long  gmtOffset_sec = 28800; //GMT +8
 const int   daylightOffset_sec = 0;
 
 void setup(){
@@ -72,6 +73,7 @@ void printLocalTime(){
   Serial.print("Second: ");
   Serial.println(&timeinfo, "%S");
 
+  //Print out the individual time variable and hence can be used for comparison sake
   Serial.println("Time variables");
   char timeHour[3];
   strftime(timeHour,3, "%H", &timeinfo);
@@ -82,11 +84,15 @@ void printLocalTime(){
   Serial.println(timeWeekDay);
   Serial.println();
   Serial.print(timeHour[0]);
-  int first_hour;
   
-  if (timeHour[0] == first_hour && timeHour[1] =='3')
+  //for example:
+  //hour = 21 (9pm).
+  //timeHour[0] refer to the first digit '2'
+  //timeHour[1] refer to the second digit '1'
+  //timeHour[2] refer to the third digiit of terminating character '\n'
+  if (timeHour[2] == first_hour && timeHour[1] =='1')
   {
-   Serial.print("Now is 1pm");
+   Serial.print("Now is 9pm");
    
   }
   //Serial.println("Time variables");
