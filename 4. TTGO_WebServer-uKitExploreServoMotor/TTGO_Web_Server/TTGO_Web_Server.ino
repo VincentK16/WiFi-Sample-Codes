@@ -15,6 +15,7 @@ bool LED2status = LOW;
 
 void setup() {
   Serial.begin(115200);
+  Serial2.begin(9600, SERIAL_8N1, 25,26);
   delay(100);
   pinMode(LED1pin, OUTPUT);
   pinMode(LED2pin, OUTPUT);
@@ -68,13 +69,13 @@ void handle_OnConnect() {
 
 void handle_led1on() {
   LED1status = HIGH;
-  Serial.write("H");
+  Serial2.write("H");
   server.send(200, "text/html", SendHTML(true,LED2status)); 
 }
 
 void handle_led1off() {
   LED1status = LOW;
-  Serial.write("N");
+  Serial2.write("N");
   server.send(200, "text/html", SendHTML(false,LED2status)); 
 }
 
