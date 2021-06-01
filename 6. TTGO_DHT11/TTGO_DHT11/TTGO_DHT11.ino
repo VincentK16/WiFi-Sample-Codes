@@ -11,7 +11,7 @@
 const char* ssid = "VincentKok";  // Enter SSID here
 const char* password = "vickhuawei";  //Enter Password here
 
-WebServer server(8888);
+WebServer server(80);
 
 // DHT Sensor
 uint8_t DHTPin = 32; 
