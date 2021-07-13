@@ -9,6 +9,7 @@ This repo consists of the sample codes to be used during class.
 > 5. **Ultrasonic**: Basic serial communication (UART) between uKit Explore to TTGO. [With uKit Explore connected to UBTECH Ultrasonic Sensor] *uKit Explore --> TTGO*
 > 6. **TTGO_DHT11**: Basic web server on TTGO to read and display DHT temperature and humidity values. *TTGO*
 > 7. **NTPTime_ESP32**: Learn how to request date and time from an NTP Server. *TTGO*
+> 8. **Manual_WiFi_Configuration_ESP32**: Manual configure the WiFi instead of hardcoded on code. *TTGO*
 
 For sending TWO DATAS to ESP32 from Arduino/uKit Explore Hardware, refer to:
 1. Arduino sketch for Arduino NANO to send data to NodeMCU using SoftwareSerial library: https://gist.github.com/ariffinzulkifli/fd77b92d28b2ead38f20a033a8bde72d
