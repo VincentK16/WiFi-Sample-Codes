@@ -27,6 +27,9 @@ Note that SoftwareSerial is NOT NEEDED if you are using the hardware UART.
 
 NOTE: Sample codes are just for reference and for you to improve and make your own AWESOME applications!
 
+TODO
+1. ESP32 Filesystem Uploader in Arduino IDE: https://randomnerdtutorials.com/install-esp32-filesystem-uploader-arduino-ide/ 
+
 Thanks!
 
 Vincent Kok, July 2021
