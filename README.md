@@ -25,6 +25,9 @@ Note that SoftwareSerial is NOT NEEDED if you are using the hardware UART.
 1. https://www.arduino.cc/reference/en/language/variables/data-types/string/functions/substring/
 2. https://www.arduino.cc/en/Tutorial/BuiltInExamples/StringSubstring
 
+**parseInt() Reference:**
+1. https://www.programmingelectronics.com/parseint/
+
 NOTE: Sample codes are just for reference and for you to improve and make your own AWESOME applications!
 
 TODO
@@ -32,4 +35,4 @@ TODO
 
 Thanks!
 
-Vincent Kok, July 2021
+Vincent Kok, October 2021
