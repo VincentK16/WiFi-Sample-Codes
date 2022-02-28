@@ -29,6 +29,9 @@ void setup() {
   WiFi.softAP(ssid, password);
   WiFi.softAPConfig(local_ip, gateway, subnet);
   delay(100);
+  IPAddress IP = WiFi.softAPIP();
+  Serial.print("AP IP address: ");
+  Serial.println(IP);
   
   server.on("/", handle_OnConnect);
   server.on("/led1on", handle_led1on);
