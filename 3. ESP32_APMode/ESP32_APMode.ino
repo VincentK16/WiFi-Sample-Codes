@@ -23,7 +23,6 @@ void setup() {
   pinMode(LED2pin, OUTPUT);
 
   WiFi.softAP(ssid, password);
-  WiFi.softAPConfig(local_ip, gateway, subnet);
   delay(100);
   IPAddress IP = WiFi.softAPIP();
   Serial.print("AP IP address: ");
